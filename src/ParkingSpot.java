@@ -34,5 +34,29 @@ public class ParkingSpot {
         vehicle = null;
     }
 
+    public int getRow() {
+        return row;
+    }
 
+    public int getSpotNumber() {
+        return spotNumber;
+    }
+
+    public VehicleSize getSize() {
+        return spotSize;
+    }
+
+    public void print() {
+        if (vehicle == null) {
+            if (spotSize == VehicleSize.Compact) {
+                System.out.print("compact");
+            } else if (spotSize == VehicleSize.Large) {
+                System.out.print("large");
+            } else if (spotSize == VehicleSize.Motorcycle) {
+                System.out.print("motorcycle");
+            }
+        } else {
+            vehicle.print();
+        }
+    }
 }

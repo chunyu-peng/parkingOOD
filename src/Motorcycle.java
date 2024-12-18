@@ -1,5 +1,5 @@
 public class Motorcycle extends Vehicle {
-    public Motocycle() {
+    public Motorcycle() {
         spotsNeeded = 1;
         size = VehicleSize.Motorcycle;
     }

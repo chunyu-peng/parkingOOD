@@ -5,9 +5,7 @@ public class Bus extends Vehicle {
     }
 
     public boolean canFitInSpot(ParkingSpot spot) {
-        if (spot.getSize() == VehicleSize.Large) {
-            return true;
-        }
+        return spot.getSize() == VehicleSize.Large;
     }
 
     public void print() {
